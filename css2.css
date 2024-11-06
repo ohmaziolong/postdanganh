@@ -1,0 +1,107 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: rgb(35, 41, 70);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    background-color: #333;
+    color: white;
+    height: 80vh;
+    padding: 20px;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.content .left {
+    flex: 1;
+    padding-right: 20px;
+    overflow-y: auto;
+}
+
+.content .left h2 {
+    font-size: 24px;
+}
+
+.content .left p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content .right {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.content .right .card {
+    background-color: white;
+    color: black;
+    width: 30%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content .right .card img {
+    width: 100%;
+    height: auto;
+}
+
+.content .right .card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.content .right .card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: rgb(35, 41, 70);
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.settings-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: green;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .content .right {
+        flex-direction: column;
+        width: 100%;
+    }
+    .content .right .card {
+        width: 100%;
+    }
+    .footer {
+        font-size: 16px;
+    }
+}
